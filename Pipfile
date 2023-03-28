@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+python-docx = "*"
+termcolor = "*"
+
+[dev-packages]
+pyinstaller = "*"
+
+[requires]
+python_version = "3"
+
+[scripts]
+build = "pyinstaller --onefile --distpath . bundle.py"
